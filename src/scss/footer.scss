@@ -1,0 +1,44 @@
+footer {
+    background-color: antiquewhite;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 768px) {
+        display: grid;
+        gap: 7.5px;
+
+    }
+    width: 100%;
+    background: white;
+    padding: 20px; /* Adding padding for spacing */
+
+    .contact-support {
+        display: grid; /* Use grid for the contact-support section */
+        grid-template-columns: repeat(2, 200px); /* Two columns */
+        gap: 20px; /* Add some gap between items */
+
+        @media (max-width:768px) {        
+            grid-template-columns: 1fr; /* One column per row */
+            text-align: center; /* Center-align items */
+        }
+
+        .item-cs {
+            h5 {
+                font-weight: 500;
+                margin: 0; /* Remove default margin for h5 elements */
+            }
+        }
+    }
+
+    .credits {
+        width: 70%; /* Take up full width */
+        text-align: center; /* Center-align text */
+        @media (max-width:768px) {        
+            width: 95%; /* One column per row */
+        }
+        h5 {
+            margin: 0; /* Remove default margin for h5 elements */
+        }
+    }
+}

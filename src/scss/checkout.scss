@@ -1,0 +1,89 @@
+.shopping-component {
+    background: linear-gradient(120deg, #0099cc, #eeead7);
+
+    .item-check-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 10px;
+        padding: 10px;
+
+        .prices,.check-out-item {
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.815);
+            border-radius: 5px;
+            color: #fff;
+            outline: none;
+            border: 0px;
+        }
+        button {
+            cursor: pointer;
+        }
+    }
+
+}
+.shopping-cart-list {
+    width: 100%;
+    // height: 90vh;
+    border-radius: 15px;
+    display: grid;
+    // align-items: center;
+    // justify-content: center;
+    overflow-y: auto;
+    gap: 10px;
+    padding: 20px;
+    .link-item {
+        width: 100%;
+        height: 180px;
+        border-radius: 10px;
+        background: linear-gradient(to left, #cc0000be, #ffdc2ab9);
+        display: flex;
+        align-items:center;
+        justify-content: space-around;
+        & > * {
+            align-self: center;
+            justify-self: center;
+        }
+        .checkmark {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border: 2px solid white;
+            // background: black;
+        }
+        .img-side {
+            // background: orange;
+            width: 200px;
+            height: 150px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .t1-text {
+            display: grid;
+            gap: 10px;
+            h5 {
+                font-size: 15px;
+            }
+        }
+
+        .quantity-button {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 7.5px;
+            gap: 7.5px;
+            width: 100px;
+            border: 1px solid white;
+            svg {
+                width: 15px;
+                height: 15px;
+            }
+        }
+
+    }
+}
